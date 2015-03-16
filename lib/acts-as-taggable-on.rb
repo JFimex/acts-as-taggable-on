@@ -79,11 +79,7 @@ module ActsAsTaggableOn
     end
 
     def delimiter=(string)
-      ActiveRecord::Base.logger.warn <<WARNING
-ActsAsTaggableOn.delimiter is deprecated \
-and will be removed from v4.0+, use  \
-a ActsAsTaggableOn.default_parser instead
-WARNING
+
       @delimiter = string
     end
 
